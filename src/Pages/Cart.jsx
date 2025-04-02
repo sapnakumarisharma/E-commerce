@@ -39,7 +39,7 @@ const Cart = ({cart,setCart}) => {
       obj.price = obj.price - (obj.price / obj.quantity);
       obj.quantity = obj.quantity - 1;
       obj.stock = obj.stock + 1;
-      let copyArr = [...cart];
+      let copyArr = [...cartArr];
       copyArr[i] = obj;
       setCart(copyArr);
     }
